@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/* reset da pagina */
+body{
+    background-color: khaki;
+}
+.conteiner div{
+    height: 500px;
+    flex-grow: 1;
+    overflow: hidden;
+    /* nao permite q a ação saia do conteiner */
+}/* o tamanho do conteiner */
+.conteiner img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    /* filtro de cinza */
+    transition: 1s;
+    /* transição :) */
+    
+}/* a imagem vai utilizar 100% do conteiner tanto em altura quanto em largura*/
+
+.conteiner img:hover{ /*só acontece com a interacao do mouse*/
+    filter: grayscale(0);
+    /* passa para colorida */
+    transform: scale(1.2);
+    /* aumenta o tamanho */
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+    padding:16px;
+    /* criar um flex */
+    
+    /* flex-direction: row; */
+/* direcao do flex */
+
+    /* gap:20px;*/
+/* distancia das img */
+
+    /* justify-content: center;*/
+/* direcao na linhas do conteiner(meio LR e LL */
+
+    /* align-items: center; */
+/* direcao na vertical do conteiner */
+
+    /* background-color: deepskyblue;*/
+
+    /* height: 500px;*/
+ /* altura */
+}
